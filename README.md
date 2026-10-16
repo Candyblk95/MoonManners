@@ -16,3 +16,12 @@ A WoW Forever addon project combining thoughtful buff assistance, characterful t
 
 Planning / initial repository setup. The functions above are not implemented yet. Source addons under evaluation: Manners and Forever Thanks. Compatibility needs verification against WoW Forever interface 16001 and the client's available APIs.
 
+
+## Gratitude delivery modes
+
+- **Whisper only:** send one selected racial/custom thank-you line.
+- **Emote only:** perform a configurable `/thank`, `/salute`, `/bow`, `/wave`, `/cheer`, or `/applaud` (as supported by the client).
+- **Whisper + emote:** send a thank-you line and perform one selected or randomly rotated emote.
+- **Off:** no automatic gratitude.
+
+Allow fixed emote selection or random rotation from an enabled-emote list, and use the same per-recipient cooldown for combined actions so one buff event never triggers repeated whispers/emotes. Validate that the recipient is a valid emote target, avoid changing the player's selected target, and gracefully fall back if targeted emotes are unsupported. Respect client chat and emote restrictions.
