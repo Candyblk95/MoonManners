@@ -16,6 +16,3 @@ A WoW Forever addon project combining thoughtful buff assistance, characterful t
 
 Planning / initial repository setup. The functions above are not implemented yet. Source addons under evaluation: Manners and Forever Thanks. Compatibility needs verification against WoW Forever interface 16001 and the client's available APIs.
 
-## Development approach
-
-Keep changes on `main`. First build a working foundation and SavedVariables/options, then add event-driven buff tracking and gratitude, followed by rank-aware buff recommendations and healing prompts. Test in-game before declaring features supported.
